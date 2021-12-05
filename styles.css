@@ -1,6 +1,6 @@
-* {
+/* * {
     border: 1px solid red;
-}
+} */
 .wrapper {
     margin: 0px 14%;
     display: grid;
@@ -22,7 +22,7 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    font-size: 15px;
+    font-size: 16px;
     margin: 90px 15%;
     list-style: none;
     /* background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, .2)), color-stop(0.05, rgba(0, 0, 0, 0)), color-stop(0.97, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .45))), 
@@ -30,11 +30,37 @@
     -webkit-gradient(linear, 0 100%, 0 0, from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), to(#808080));  */
     background: linear-gradient(to top, #666, #5e5e5e 50%,#707070 51%, #808080);
     color: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .nav-item {
-    padding: 5px 40px;
+    padding: 13px 40px 0px 40px;
 }
+
+.nav-item:hover {
+    background: rgba(0, 0, 0, .35);
+}
+form {
+    padding-bottom: 6px;
+
+}
+input[type=text] {
+    background: rgba(0, 0, 0, .1);
+    border-radius: 20px;
+    box-sizing: border-box;
+    outline: none;
+    width: 100%;
+    transition: width 0.4s ease-in-out;
+    transition: background .2s ease-in-out;
+
+}
+
+input[type=text]:focus {
+    background: white;
+    width: 120%;
+  }
 
 .promos {
     display: flex;
@@ -66,5 +92,6 @@ footer {
 .footer-item {
     margin: 8px 0px;
 }
+
 
 
