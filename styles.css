@@ -1,6 +1,10 @@
 /* * {
     border: 1px solid red;
 } */
+body {
+    font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+
+}
 .wrapper {
     margin: 0px 14%;
     display: grid;
@@ -11,13 +15,33 @@
     background: url("images/mountains.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 0px -400px;
     height: 500px;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 4px rgb(49, 49, 49);
+
+
 
 }
 
 #verse {
-    text-align: center;
+    font-size: 60px;
     margin-top: 0px;
+    font-weight: 100;
+
+}
+h2, h3 {
+    line-height: normal;
+    font-weight: 100;
+    padding: 0px 300px;
+}
+
+h2 {
+    font-size: 35px;
+}
+h3 {
+    font-size: 30px;
 }
 .navbar {
     display: flex;
@@ -33,17 +57,18 @@
     border-radius: 5px;
     box-sizing: border-box;
     overflow: hidden;
+    text-shadow: 1px 1px 4px rgb(49, 49, 49);
 }
 
 .nav-item {
-    padding: 13px 40px 0px 40px;
+    padding: 15px 40px 0px 40px;
 }
 
 .nav-item:hover {
     background: rgba(0, 0, 0, .35);
 }
 form {
-    padding-bottom: 6px;
+    padding-bottom: 5px;
 
 }
 input[type=text] {
@@ -54,6 +79,7 @@ input[type=text] {
     width: 100%;
     transition: width 0.4s ease-in-out;
     transition: background .2s ease-in-out;
+
 
 }
 
@@ -70,7 +96,7 @@ input[type=text]:focus {
 
 footer {
     font-size: 12px;
-    padding: 15px 17%; 
+    padding: 15px 14%; 
     display: grid;
     grid-template-columns: 1fr 1fr;
 
